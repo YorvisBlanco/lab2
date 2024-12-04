@@ -7,7 +7,7 @@
 /*<--comienzo del header-->*/
 .header{
     width: 100%;
-    background-color: rgb(207, 193, 175);
+    background-color: rgb(248, 247, 245);
 }
 
 .container{
@@ -26,7 +26,7 @@
 }
 
 .navegacion a:hover{
-    color: rgb(240, 30, 30);
+    color: rgb(42, 241, 16);
 }
 
 /*<--cierre del header-->*/
@@ -60,7 +60,7 @@
 
 .btn{
     margin-top: 20px;
-    background-color: rgb(228, 7, 7);
+    background-color: rgb(34, 244, 23);
     color: black;
     padding: 20px;
     border-radius: 10%;
@@ -74,4 +74,183 @@
     left: 0;
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.5)
+}
+
+/* <-- mis proyectos --> */
+
+.proyectos {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.proyectos h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.proyectos-lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.proyecto {
+    background-color: white;
+    border-radius: 8px;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.proyecto h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.proyecto p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* <-- contáctanos --> */
+
+.contacto {
+    padding: 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contacto form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contacto label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacto button {
+    padding: 10px 18px;
+    background-color: rgb(12, 245, 74);
+    color: black;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacto button:hover {
+    background-color: rgb(240, 30, 30);
+}
+
+/* <-- Redes sociales --> */
+
+.redes-sociales {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.redes-sociales h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.redes-sociales-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los enlaces */
+}
+
+.redes-link {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.redes-link:hover {
+    color: rgb(240, 30, 30);
+    }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .navegacion a {
+        padding-left: 0;
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .presentacion {
+        font-size: 25px;
+    }
+
+    .proyectos-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .contacto form {
+        padding: 0 20px;
+    }
+
+    .contacto h2 {
+        font-size: 2em;
+    }
 }
